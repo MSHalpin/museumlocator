@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable= no,">
+    <link href="style_artist.css" type="text/css" rel="stylesheet">
+    <title>Museum Locater & Painting Tracker</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <div id="section-top"></div>
+
+            <h1>Museum Locator<br>  
+                <span class="logo">&</span><br>    
+                Painting Tracker</h1>
+            <nav>
+                <label for="toggle">&#9776</label>
+                <input type="checkbox" id="toggle">
+                <div class="menu">
+                    <a class="navtext" href="index.html">Home</a>
+                    <a class="navtext" href="artist.html">Artist</a>
+                    <a class="navtext" href="visit.html">Visit</a>
+                     <a class="navtext" href="contact.html">Contact</a>
+                </div>    
+            </nav>
+
+            <div class="border"></div>
+
+        </header>  
+
+        <section>
+            <h2 class="h2artist">List of the Artists </h2>
+            <div class="sub-section">Find out more about the greatest 19th Century Painters. The legacy of 19th Century painting is immense. The huge changes toward artistic freedom that occurred in the final decades of the century without doubt paved the foundations for the contemporary art world - and indeed the art market - that we enjoy today. </div>
+        </section>
+
+        <article class="article1">
+            
+                <div id="bazille"><h2 class="img-title">1, Frédéric Bazille</h2></div>
+
+                <div class="image-container">
+                    <a id="example1" href="img/artists/large_bazille_portrait_by_renoir.jpeg"><img src="img/artists/bazille_portrait_by_renoir.jpeg" alt="portrait of Bazille" class="center"></a>
+                    <div class="on-img">Year: 1867<br> 
+                        Medium: oil on canvas<br> 
+                        Dimensions:	105 cm × 73.5 cm
+                    </div>
+                </div> 
+                
+                <paragraph>
+                    <div class="introduction">
+                        Born:  6 December 1841 / Died:	28 November 1870 (aged 28)
+                    <div>
+                    <div class="p">
+                        This portrait was painted by <a href="artist.html#renoir">Pierre-Auguste Renoir</a>. He was an Impressionist painter. Many of Bazille's major works are examples of figure painting in which he placed the subject figure within a landscape painted en plein air. [1] 
+                        <div>&nbsp</div>
+                        <div class="p3"><a href="visit.html#orsay">   
+                        Location: Musée d'Orsay, Paris</a></div> 
+                    </div>    
+                </paragraph>
+        </article>   
+
+        <article class="article1-r">
+            
+                 <div id="degas"><h2 class="img-title">2, Edgar Degas</h2></div>
+
+                 <div class="image-container">
+                     <a id="example1" href="img/artists/large_degas_self_portrait.jpeg"><img src="img/artists/degas_self_portrait.jpeg" alt="Portrait of Degas" class="center"></a>
+                     <div class="on-img">Year: 1855<br> 
+                        Medium: oil on paper<br> 
+                        Dimensions: 81.3 cm x 64.5 cm	 
+                    </div>
+                 </div>    
+                
+                <paragraph>
+                    <div class="introduction">
+                        Born: 19 July 1834 / Died:	27 September 1917 (aged 83)
+                    </div>
+                    <div class="p">    
+                        Self portrait. He is famous for his paintings and sculptures: he was one of the  Impressionism, and preferred to be called a realist. Over half of his works depict dancers.[2] 
+                        <div>&nbsp</div>
+                        <div class="p3"><a href="visit.html#orsay">   
+                        Location: Musée d'Orsay, Paris</a></div>
+                    </div>
+                </paragraph>                   
+        </article>
+
+        <article class="article2">
+            
+                <div id="rousseau"><h2 class="img-title">3, Henri Rousseau</h2></div>
+
+                 <div class="image-container">
+                     <a id="example1" href="img/artists/large_rousseau_myself_portrait.jpeg"><img src="img/artists/rousseau_myself_portrait.jpeg" alt="portrait of Rousseau" class="center"></a>
+                     <div class="on-img">Year: 1890<br> 
+                        Medium: oil on paper<br> 
+                        Dimensions: 146 cm x113 cm
+                    </div>
+                </div>
+
+                <paragraph>   
+                    <div class="introduction">
+                        Born: 21 May 1844 / Died:	2 September 1910 (aged 66)
+                    </div> 
+                    <div class="p">
+                        Self portrait. He was the post-impressionist painter. He is also known as Le Douanier (the customs officer) after his place of employment. Ridiculed during his life, he came to be recognized as a self-taught genius whose works are of high artistic quality. He started painting seriously in his early forties; by age 49. [3] 
+                        <div>&nbsp</div>
+                        <div class="p3"><a href="visit.html#prague">   
+                        Location: National Gallery, Prague</a></div>
+                    </div>
+                </paragraph>
+        </article>
+
+        <article class="article2-r">
+            
+            <div id="renoir"><h2 class="img-title">4, Pierre-Auguste Renoir</h2></div>
+            
+            <div class="image-container">
+                <a id="example1" href="img/artists/large_renoir_portrait_by_b.jpeg"><img src="img/artists/renoir_portrait_by_b.jpeg" alt="portrait of Renoir" class="center"></a>
+                <div class="on-img">Year: 1867<br>
+                    Medium: oil on paper<br>
+                    Dimensions: 105 cm × 73.5 cm
+                </div>
+            </div>
+
+            <paragraph>    
+                <div class="introduction">
+                    Born:	25 February 1841 / Died:  3 December 1919 (aged 78)
+                </div>
+                <div class="p">
+                    This portrait was painted by <a href="artist.html#bazille">Frédéric Bazille</a>. He was a leading painter in the development of the Impressionist style. As a celebrator of beauty and especially feminine sensuality, it has been said that "Renoir is the final representative of a tradition which runs directly from Rubens to Watteau. [4]  
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#orsay"> 
+                    Location: Musée d'Orsay, Paris</a></div> 
+                </div>
+            </paragraph>
+
+        </article>
+
+        <article class="article3">
+            
+            <div id="courbet"><h2 class="img-title">5, Gustave Courbet</h2></div>
+
+            <div class="image-container">
+                <a id="example1" href="img/artists/large_courbet_self_portrait.jpeg"><img src="img/artists/courbet_self_portrait copy.jpeg" alt="portrait of Courbet" class="center"></a>       
+                <div class="on-img">Year: 1843<br>
+                    Medium: oil on canvas<br>
+                    Dimensions: 89 cm × 99 cm
+                </div>
+           
+            </div> 
+            
+            <paragraph>
+                <div class="introduction">
+                    Born:  10 June 1819 / Died:	31 December 1877 (aged 58)
+                <div>
+                <div class="p">
+                    Self portrait (Title: The Desperate Man). Led the Realism movement in 19th-century French painting. Committed to painting only what he could see, he rejected academic convention and the Romanticism of the previous generation of visual artists. His independence set an example that was important to later artists, such as the Impressionists and the Cubists. [5] 
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#"> 
+                    Location: Unavailable. Private collection at BNP Paribas, Paris</a></div>
+                </div>   
+            </paragraph>
+        </article> 
+
+        <article class="article3-r">
+            
+            <div id="manet"><h2 class="img-title">6, Édouard Manet</h2></div>
+            
+            <div class="image-container">
+                <a id="example1" href="img/artists/large_manet_portrait.jpeg"><img src="img/artists/manet_portrait.jpeg" alt="portrait of Manet" class="center"></a>
+                <div class="on-img">Year: 1867<br>
+                    Medium: oil on paper<br>
+                    Dimensions: 117.5 cm ×  90 cm
+                </div>
+            </div>
+
+            <paragraph>    
+                <div class="introduction">
+                    Born:	23 January 1832 / Died:  30 April 1883 (aged 51)
+                </div>
+                <div class="p">
+                    This portrait painted by Fantin-Latour. At his father's suggestion, in 1848 he sailed on a training vessel to Rio de Janeiro. After he twice failed the examination to join the Navy,[5] his father relented to his wishes to pursue an art education. From 1850 to 1856, Manet studied under the academic painter Thomas Couture. In his spare time, Manet copied the Old Masters in the Louvre. [6]  
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#chicago"> 
+                    Location: Art Institute of Chicago</a></div> 
+                </div>
+            </paragraph>
+        </article>
+
+        <article class="article4">
+            
+            <div id="matisse"><h2 class="img-title">7, Henri Matisse</h2></div>
+            
+            <div class="image-container">
+                <a id="example1" href="img/artists/large_matisse.jpeg"><img src="img/artists/matisse.jpeg" alt="portrait of Matisse" class="center"></a>
+                <div class="on-img">Year: 1918<br>
+                    Medium: oil on paper<br>
+                    Dimensions: 65 cm ×  54 cm
+                </div>
+            </div>
+
+            <paragraph>    
+                <div class="introduction">
+                    Born:	31 December 1869 / Died:  3 November 1954 (aged 84)
+                </div>
+                <div class="p">
+                    Self-portrait. In 1948, Matisse began to prepare designs for the Chapelle du Rosaire de Vence, which allowed him to expand this technique within a truly decorative context. The experience of designing the chapel windows, chasubles, and tabernacle door—all planned using the cut-out method—had the effect of consolidating the medium as his primary focus. Finishing his last painting in 1951 (and final sculpture the year before). [7]  
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#cateau"> 
+                    Location: Matisse Museum, Le Cateau, France</a></div> 
+                </div>
+            </paragraph>
+
+        </article>
+
+        <article class="article4-r">
+            
+            <div id="monet"><h2 class="img-title">8, Claude Monet</h2></div>
+            
+            <div class="image-container">
+                <a id="example1" href="img/artists/large_monet_portrait_ by_renoir.jpeg"><img src="img/artists/monet_portrait_ by_renoir.jpeg" alt="portrait of Manet" class="center"></a>
+                <div class="on-img">Year: 1875<br>
+                    Medium: oil on canvas<br>
+                    Dimensions: 84 x 60.5 cm
+                </div>
+            </div>
+
+            <paragraph>    
+                <div class="introduction">
+                    Born:	14 November 1840 / Died:  5 December 1926 (aged 86)
+                </div>
+                <div class="p">
+                    This portrait was painted by <a href="artist.html#renoir">Pierre-Auguste Renoir</a>. He was founder of impressionist painting who is seen as a key precursor to modernism. The family worked and built up the gardens, and Monet's fortunes began to change for the better as Durand-Ruel had increasing success in selling his paintings. The gardens were Monet's greatest source of inspiration for 40 years. In 1890, Monet purchased the house. [8] 
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#orsay"> 
+                    Location: Musée d'Orsay, Paris</a></div> 
+                </div>
+            </paragraph>
+
+            <a href="#section-top" class="section-top">↑Top</a>
+
+        </article>
+
+
+        <div class="refference">
+            <div class="border"></div>
+            <h3>Refference</h3>
+            <div class="wiki">[1] Wikipedia,  (18 February 2022), [accessed 13 March, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Bazille<br>
+                [2] Wikipedia,  (9 March 20222022), [accessed 14 March, 2022]. What are Wikipedia? Available: https://simple.wikipedia.org/wiki/Edgar_Degas<br>
+                [3] Wikipedia,  (11 February 2022), [accessed 14 March, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Henri_Rousseau<br>
+                 &nbsp  &nbsp MoMA, (unnown), [accessed 14 March, 2022]. What are MoMA? Available: https://www.moma.org/artists/5056<br>
+                [4] Wikipedia,  (28 February 2022), [accessed 14 March, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Pierre-Auguste_Renoir<br>
+                [5] Wikipedia,  (23 March 2022), [accessed 4 April, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Gustave_Courbet<br>
+                [6] Wikipedia,  (2 April 2022), [accessed 4 April, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/%C3%89douard_Manet<br>
+                [7] Wikipedia,  (28 March 2022), [accessed 4 April, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Henri_Matisse<br>
+                [8] Wikipedia,  (1 April 2022), [accessed 5 April, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Claude_Monete<br>
+                 &nbsp  &nbsp Pola, (unnown), [accessed 5 April, 2022]. What are Pola? Available: https://www.polamuseum.or.jp/english/<br>
+                 [9] Musee Orangerie,  (unnown), [accessed 5 April, 2022]. What are Musee Orangerie? Available: https://www.musee-orangerie.fr/en
+            </div>
+        </div>
+
+        <footer>
+            <h2 class="footer-font">Designed and Developed By Mayumi Halpin 2022</h2>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable= no,">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Museum Locater & Painting Tracker</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+</head>
+
+<body>
+    <div class="container">
+      
+        <header>
+
+            <div id="section-top"></div>
+
+            <h1>Museum Locator<br>  
+                <span class="logo">&</span><br>    
+                Painting Tracker</h1> 
+
+            <nav>
+                <label for="toggle">&#9776</label>
+                <input type="checkbox" id="toggle">
+                <div class="menu">
+                    <a class="navtext" href="index.html">Home</a>
+                    <a class="navtext" href="artist.html">Artist</a>
+                    <a class="navtext" href="visit.html">Visit</a>
+                    <a class="navtext" href="contact.html">Contact</a>
+                </div>    
+            </nav> 
+
+            <div class="border"></div>
+
+        </header>
+
+      <section> 
+            <h2>French Artists and Paintings in 19th-20th Century</h2>
+            <div class="sub-section"> Paintings can be far more complicated than they appear at first glance and difficult to decipher if the viewer doesn’t speak the same tongue. Iconography—the symbolic language of a given work of art—can be sophisticated and complex, reflecting the collective consciousness or drawn from the artist’s personal experience. </div>
+        </section>
+
+        <article class="article1">
+            
+                <div class="image-container">
+                    <h2 class="img-title">1, The Family Reunion</h2>
+                    <a id="example1" href="img/BazilleFamilyReunion_large.jpeg"><img src="img/family_reunion_bazille.jpeg" alt="image of family reunion" class="center"></a>
+                    <div class="on-img">Year: 1867–1868<br>
+                        Medium: Oil on canvas<br>
+                        Dimensions: 152 × 230 cm
+                    </div>
+                </div>
+                
+                <paragraph>
+                    <div class="p">
+                        It depicts his close family, with himself at the far left behind his seated parents, gathered on the terrace of the family home at Méric, near Montpellier, France. The group are in the shade of a large tree on a sunny day, which enhanced the variations between light and shade.  [1]
+                        <div class="spaceup">&nbsp</div>
+                        <div class="p2"><a href="artist.html#bazille">
+                        Artist: Frédéric Bazille</a></div> 
+                        <div>&nbsp</div>
+                        <div class="p3"><a href="visit.html#orsay">              
+                        Location: Musée d'Orsay, Paris</a></div>
+                    </div>    
+                </paragraph>
+            
+        </article>   
+
+        <article class="article1-r">
+           
+                <h2 class="img-title">2, The Star</h2>
+
+                <div class="image-container">
+                    <a id="example1" href="img/the-star-large.jpeg"><img src="img/ballet_edgar.jpeg" alt="image of ballet" class="center"></a>
+                    <div class="on-img">Year: 1876-1878<br>
+                        Medium: Pastel over ink monotype on laid paper<br>
+                        Dimensions: 44.1 × 34.3 cm 
+                    </div>
+                </div>
+
+                <paragraph>    
+                    <div class="p">
+                        On the stage, the stage lighting shining brilliantly onto her and her performance. Maybe in this moment she feels, like a star, on top of the world, but one glance to the left and we can see, hiding behind the curtain, a foreboding, black figure standing calmly and watchfully to the side of all the action. This is the young dancer's patron.  [2]
+                        <div>&nbsp</div>
+                        <div class="p2"><a href="artist.html#degas">
+                        Artist: Edgar Degas</a></div> 
+                        <div>&nbsp</div>
+                        <div class="p3"><a href="visit.html#orsay">    
+                        Location: Musée d'Orsay, Paris</a></div>
+                    </div>
+                </paragraph>
+                                
+        </article>
+
+        <article class="article2">
+            
+                <h2 class="img-title">3, The Dream</h2>
+
+                <div class="image-container">
+                    <a id="example1" href="img/Rousseau_dream_large.jpeg"><img src="img/henri_rousseau_dream.jpeg" alt="image of the Dream" class="center"></a>
+                    <div class="on-img">Year: 1910<br>
+                        Medium: Oil on canvas<br>
+                        Dimensions: 204.5 x 298.5 cm
+                    </div>
+                </div>
+
+                <paragraph>   
+                    <div class="p">
+                        His final painting, The Dream, in March 1910, at the Salon des Independants. “The woman asleep on the couch is dreaming she has been transported into the forest, listening to the sounds from the instrument of the enchanter,” Rousseau wrote of this enigmatic painting. [3]
+                        <div class="spaceup">&nbsp</div>
+                        <div class="p2"><a href="artist.html#rousseau">
+                        Artist: Henri Rousseau</a></div> 
+                        <div>&nbsp</div>
+                        <div class="p3"><a href="visit.html#moma">   
+                        Location: Museum of Modern Art (MoMA), New York</a></div> 
+                    </div>
+                </paragraph>
+            
+        </article>
+
+        <article class="article2-r">
+            
+                <h2 class="img-title">4, Dance at Le Moulin de la Galette</h2>
+
+                <div class="image-container">
+                    <a id="example1" href="img/Renoir_la_Galette_large.jpeg"><img src="img/renoir_galette.jpeg" alt="image of galette" class="center"></a>
+                    <div class="on-img"> Year:  1876<br>
+                        Medium: Oil on canvas<br>
+                        Dimensions: 131 cm × 175 cm
+                    </div>
+                </div>  
+                 
+                <paragraph>  
+                    <div class="p">
+                        is one of Impressionism's most celebrated masterpieces.[1] The painting depicts a typical Sunday afternoon at the original Moulin de la Galette in the district of Montmartre in Paris. In the late 19th century, working class Parisians would dress up and spend time there dancing, drinking, and eating galettes into the evening. [4]
+                        <div>&nbsp</div>
+                        <div class="p2"><a href="artist.html#renoir">
+                        Artist: Pierre Renoir</a></div> 
+                        <div>&nbsp</div>
+                        <div class="p3"><a href="visit.html#orsay">
+                        Location: Musée d'Orsay, Paris</a></div>  
+                    </div>
+                </paragraph>
+
+        </article>
+
+        <article class="article3">
+            
+            <div class="image-container">
+                <h2 class="img-title">5, Cliffs at Etretat, After the Storm</h2>
+                <a id="example1" href="img/large_after_the_storm-1870.jpeg"><img src="img/after_the_storm-1870.jpeg" alt="image of after the storm" class="center"></a>
+                <div class="on-img">Year: 1870<br>
+                    Medium: Oil on canvas<br>
+                    Dimensions: 133 × 162 cm 
+                </div>
+            </div>
+            
+            <paragraph>
+                <div class="p">
+                    paintings such as The Cliffs at Etretat after the Storm, as found here, it is perhaps the most obvious link to artists like Claude Monet, who arrived a generation later. Indeed he completed his own version in 1885, titled The Cliffs at Etretat.   [5]
+                    <div>&nbsp</div>
+                    <div class="p2"><a href="artist.html#courbet">
+                    Artist: Gustave Courbet</a></div> 
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#orsay">              
+                    Location: Musée d'Orsay, Paris</a></div>
+                </div>    
+            </paragraph>
+        
+        </article> 
+
+        <article class="article3-r">
+            
+                <h2 class="img-title">6, The Luncheon on the Grass</h2>
+
+                <div class="image-container">
+                    <a id="example1" href="img/large_manet.jpeg"><img src="img/manet.jpeg" alt="image of the luncheon on the grass" class="center"></a>
+                    <div class="on-img">Year: 1863<br>
+                        Medium: Oil on canvas<br>
+                        Dimensions: 208 x 264.5 cm
+                    </div>
+                </div>
+
+                <paragraph>   
+                    <div class="p">
+                        The Paris Salon rejected it for exhibition in 1863, but Manet agreed to exhibit it at the Salon des Refusés (Salon of the Rejected) which was a parallel exhibition to the official Salon, as an alternative exhibition in the Palais des Champs-Elysée. [5]
+                        <div>&nbsp</div>
+                        <div class="p2"><a href="artist.html#manet">
+                        Artist: Édouard Manet</a></div> 
+                        <div>&nbsp</div>
+                        <div class="p3"><a href="visit.html#orsay">              
+                        Location: Musée d'Orsay, Paris</a></div>
+                    </div>
+                </paragraph>
+            
+        </article>
+
+        <article class="article4">
+            
+            <h2 class="img-title">7, View of Collioure</h2>
+
+            <div class="image-container">
+                <a id="example1" href="img/large_collioure.jpeg"><img src="img/collioure.jpeg" alt="image of View of Collioure" class="center"></a>
+                <div class="on-img">Year: 1905<br>
+                    Medium: Oil on canvas<br>
+                    Dimensions: 59.5 × 73 cm cm
+                </div>
+            </div>
+
+            <paragraph>   
+                <div class="p">
+                    It is an example of the style that Matisse employed during his early period of Fauvism. Collioure was a small southern French town on the shore of the Mediterranean where Matisse worked in the summer of 1905 and the spring and summer of 1906. This view of the town is usually dated to 1905. The world is flooded with sunlight, it radiates joy in life and joy in painting. [6]
+                    <div>&nbsp</div>
+                    <div class="p2"><a href="artist.html#matisse">
+                    Artist: Henri Matisse</a></div> 
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#petersburg">   
+                    Location: The Hermitage Museum, St. Petersburg</a></div> 
+                </div>
+            </paragraph>
+        
+        </article>
+
+        <article class="article4-r">
+            
+            <h2 class="img-title">8, Water Lilies and Japanese Bridge</h2>
+
+            <div class="image-container">
+                <a id="example1" href="img/large_monet_bridge.jpeg"><img src="img/monet_bridge.jpeg" alt="image of Water Lilies and Japanese Bridge" class="center"></a>
+                <div class="on-img">Year: 1899<br>
+                    Medium: Oil on canvas<br>
+                    Dimensions: 89.7 x 90.5 cm
+                </div>
+            </div>
+
+            <paragraph>   
+                <div class="p">
+                    Monet created a garden with Japanese-styled bridge in Giverny. He continued to depict that garden until his death at the age of 86. The lake of water lily became especially an important theme; Monet left approximately 200 works of that theme. [8]
+                    <div class="space2up">&nbsp</div>
+                    <div class="p2"><a href="artist.html#monet">
+                    Artist: Claude Monet</a></div> 
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#pola">   
+                    Location: POLA Museum of Art, Japan</a></div> 
+                </div>
+            </paragraph>
+        
+        </article>
+
+        <article class="article5">
+            
+            <h2 class="img-title">9, Green Reflections</h2>
+
+            <div class="image-container">
+                <a id="example1" href="img/large_green_reflections.jpeg"><img src="img/s_green_reflections.jpeg" alt="image of Green reflections" class="center"></a>
+                <div class="on-img">Year: 1914 and 1926<br>
+                    Medium: Oil on canvas<br>
+                    Dimensions: 200 x 850 cm
+                </div>
+            </div>
+
+            <paragraph>   
+                <div class="p">
+                    This composition is exclusively dedicated to the representation of the water of the pond of Giverny. The framing not only excludes any horizon line as in all the works of the whole Orangery but it also deliberately ignores the banks and the shore. The surface of the water is here made perceptible by the presence of the flowers and the leaves of the water lilies floating above. [9]
+                    <div>&nbsp</div>
+                    <div class="p2"><a href="artist.html#monet">
+                    Artist: Claude Monet</a></div> 
+                    <div>&nbsp</div>
+                    <div class="p3"><a href="visit.html#orangerie">   
+                    Location: Musée de l'Orangerie</a></div> 
+                </div>
+            </paragraph>
+
+            <a href="#section-top" class="section-top">↑Top</a>
+        
+        </article>
+
+        <div class="refference">
+            <div class="border"></div>
+            <h3>Refference</h3>
+            <div class="wiki">[1] Wikipedia,  (18 February 2022), [accessed 13 March, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Bazille<br>
+                [2] Wikipedia,  (9 March 20222022), [accessed 14 March, 2022]. What are Wikipedia? Available: https://simple.wikipedia.org/wiki/Edgar_Degas<br>
+                [3] Wikipedia,  (11 February 2022), [accessed 14 March, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Henri_Rousseau<br>
+                 &nbsp  &nbsp MoMA, (unnown), [accessed 14 March, 2022]. What are MoMA? Available: https://www.moma.org/artists/5056<br>
+                [4] Wikipedia,  (28 February 2022), [accessed 14 March, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Pierre-Auguste_Renoir<br>
+                [5] Wikipedia,  (23 March 2022), [accessed 4 April, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Gustave_Courbet<br>
+                [6] Wikipedia,  (2 April 2022), [accessed 4 April, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/%C3%89douard_Manet<br>
+                [7] Wikipedia,  (28 March 2022), [accessed 4 April, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Henri_Matisse<br>
+                [8] Wikipedia,  (1 April 2022), [accessed 5 April, 2022]. What are Wikipedia? Available: https://en.wikipedia.org/wiki/Claude_Monete<br>
+                 &nbsp  &nbsp Pola, (unnown), [accessed 5 April, 2022]. What are Pola? Available: https://www.polamuseum.or.jp/english/<br>
+                [9] Musee Orangerie,  (unnown), [accessed 5 April, 2022]. What are Musee Orangerie? Available: https://www.musee-orangerie.fr/en
+            </div>
+        </div>
+
+        <footer>
+            <h2 class="footer-font">Designed and Developed By Mayumi Halpin 2022</h2>
+        </footer>
+
+    </div>
+</body>
+</html>
