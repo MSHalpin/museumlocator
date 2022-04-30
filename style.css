@@ -54,6 +54,12 @@ nav {
      text-align: center;
     }    
 
+.current {
+     text-decoration: underline;
+     text-decoration-color: #e2253f;
+     text-decoration-thickness: 5px;
+    }   
+
 .menu {
      padding-top: 10px;
      float: right;
